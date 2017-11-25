@@ -46,7 +46,7 @@ public class AppRestController {
     @RequestMapping(value = "/login-Mysell", method=RequestMethod.GET)
     public RedirectView processForm1() {
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl("http://localhost:8081/auth/oauth/authorize?response_type=code&client_id=4000938477&redirect_url=http://localhost:9999/oauth/access?key=value&scope=user_read%20user_write");
+        redirectView.setUrl("http://localhost:8081/auth/oauth/authorize?response_type=code&client_id=9844123456&redirect_url=http://localhost:9999/oauth/access?key=value&scope=user_read%20user_write");
         return redirectView;
     }
     @RequestMapping(value = "/login",params={"user_login"}, method=RequestMethod.POST)
@@ -78,7 +78,7 @@ public class AppRestController {
 
             //Set Headers
             con.setRequestProperty("content-type", "application/x-www-form-urlencoded");
-            con.setRequestProperty("Authorization", "Basic MTAwMDEyMzQ1NjptQWFjODdXUXE=");
+            con.setRequestProperty("Authorization", "Basic OTg0NDEyMzQ1NjpLbG9EOTczZ2pI=");
 
             //Set Body
             con.setDoOutput(true);
