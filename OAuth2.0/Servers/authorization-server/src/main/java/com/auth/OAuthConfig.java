@@ -58,11 +58,11 @@ public class OAuthConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("25444123456")
+                .withClient("9844123456")
                 .authorizedGrantTypes("authorization_code")
                 .scopes("public_read", "user_read", "user_write")
                 .redirectUris("http://localhost:9999/oauth/access/?key=value")
-                .secret("mAac87WQq")
+                .secret("KloD973gjH")
                 .accessTokenValiditySeconds(3000000);
     }
 
