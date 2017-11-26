@@ -43,7 +43,7 @@ import org.json.JSONObject;
 public class AppRestController {
 
 
-    @RequestMapping(value = "/login-Mysell", method=RequestMethod.GET)
+    @RequestMapping(value = "/login-wowelephant", method=RequestMethod.GET)
     public RedirectView processForm1() {
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl("http://localhost:8081/auth/oauth/authorize?response_type=code&client_id=9844123456&redirect_url=http://localhost:9999/oauth/access?key=value&scope=user_read%20user_write");
